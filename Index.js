@@ -1,7 +1,7 @@
 let ip = document.getElementById('IP')
 
-function checkip(response) {
-    fetch('http://api.ipify.org/?format=json',{"method":"GET"})
+function checkip() {
+    fetch('http://api.ipify.org/?format=json')
     .then(results =>  results.json())
     .then(data => {
         console.log("IP FOUND!")
